@@ -40,6 +40,15 @@
        </color>
       </brush>
      </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
     </active>
     <inactive>
      <colorrole role="WindowText">
@@ -63,6 +72,15 @@
      <colorrole role="ButtonText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
         <red>255</red>
         <green>255</green>
         <blue>255</blue>
@@ -95,6 +113,15 @@
         <red>120</red>
         <green>120</green>
         <blue>120</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
@@ -236,6 +263,15 @@
                     </color>
                    </brush>
                   </colorrole>
+                  <colorrole role="PlaceholderText">
+                   <brush brushstyle="NoBrush">
+                    <color alpha="128">
+                     <red>255</red>
+                     <green>255</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
                  </active>
                  <inactive>
                   <colorrole role="WindowText">
@@ -283,6 +319,15 @@
                     </color>
                    </brush>
                   </colorrole>
+                  <colorrole role="PlaceholderText">
+                   <brush brushstyle="NoBrush">
+                    <color alpha="128">
+                     <red>255</red>
+                     <green>255</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
                  </inactive>
                  <disabled>
                   <colorrole role="WindowText">
@@ -327,6 +372,15 @@
                      <red>9</red>
                      <green>5</green>
                      <blue>13</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                  <colorrole role="PlaceholderText">
+                   <brush brushstyle="NoBrush">
+                    <color alpha="128">
+                     <red>255</red>
+                     <green>255</green>
+                     <blue>255</blue>
                     </color>
                    </brush>
                   </colorrole>
@@ -448,6 +502,15 @@
                     </color>
                    </brush>
                   </colorrole>
+                  <colorrole role="PlaceholderText">
+                   <brush brushstyle="NoBrush">
+                    <color alpha="128">
+                     <red>255</red>
+                     <green>255</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
                  </active>
                  <inactive>
                   <colorrole role="WindowText">
@@ -498,6 +561,15 @@
                   <colorrole role="ToolTipText">
                    <brush brushstyle="SolidPattern">
                     <color alpha="255">
+                     <red>255</red>
+                     <green>255</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
+                  <colorrole role="PlaceholderText">
+                   <brush brushstyle="NoBrush">
+                    <color alpha="128">
                      <red>255</red>
                      <green>255</green>
                      <blue>255</blue>
@@ -560,6 +632,15 @@
                     </color>
                    </brush>
                   </colorrole>
+                  <colorrole role="PlaceholderText">
+                   <brush brushstyle="NoBrush">
+                    <color alpha="128">
+                     <red>255</red>
+                     <green>255</green>
+                     <blue>255</blue>
+                    </color>
+                   </brush>
+                  </colorrole>
                  </disabled>
                 </palette>
                </property>
@@ -572,11 +653,12 @@ QToolBox::Tab{
 	border-radius: 5px;
 	background-color:rgb(17,16,26);
 	text-align:left;
+	color: rgb(255, 255, 255);
 }
 </string>
                </property>
                <property name="currentIndex">
-                <number>0</number>
+                <number>1</number>
                </property>
                <widget class="QWidget" name="page">
                 <property name="geometry">
@@ -584,7 +666,7 @@ QToolBox::Tab{
                   <x>0</x>
                   <y>0</y>
                   <width>200</width>
-                  <height>629</height>
+                  <height>671</height>
                  </rect>
                 </property>
                 <attribute name="icon">
@@ -636,6 +718,9 @@ QToolBox::Tab{
                     </property>
                     <item>
                      <widget class="QPushButton" name="pushButton_10">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
+                      </property>
                       <property name="text">
                        <string>ITEM 1</string>
                       </property>
@@ -656,7 +741,7 @@ QToolBox::Tab{
                       <property name="palette">
                        <palette>
                         <active>
-                         <colorrole role="Button">
+                         <colorrole role="WindowText">
                           <brush brushstyle="SolidPattern">
                            <color alpha="255">
                             <red>255</red>
@@ -665,7 +750,25 @@ QToolBox::Tab{
                            </color>
                           </brush>
                          </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>9</red>
+                            <green>5</green>
+                            <blue>13</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
                          <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
                           <brush brushstyle="SolidPattern">
                            <color alpha="255">
                             <red>255</red>
@@ -689,12 +792,21 @@ QToolBox::Tab{
                             <red>9</red>
                             <green>5</green>
                             <blue>13</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="NoBrush">
+                           <color alpha="128">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
                            </color>
                           </brush>
                          </colorrole>
                         </active>
                         <inactive>
-                         <colorrole role="Button">
+                         <colorrole role="WindowText">
                           <brush brushstyle="SolidPattern">
                            <color alpha="255">
                             <red>255</red>
@@ -703,7 +815,25 @@ QToolBox::Tab{
                            </color>
                           </brush>
                          </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>9</red>
+                            <green>5</green>
+                            <blue>13</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
                          <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
                           <brush brushstyle="SolidPattern">
                            <color alpha="255">
                             <red>255</red>
@@ -727,12 +857,21 @@ QToolBox::Tab{
                             <red>9</red>
                             <green>5</green>
                             <blue>13</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="NoBrush">
+                           <color alpha="128">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
                            </color>
                           </brush>
                          </colorrole>
                         </inactive>
                         <disabled>
-                         <colorrole role="Button">
+                         <colorrole role="WindowText">
                           <brush brushstyle="SolidPattern">
                            <color alpha="255">
                             <red>255</red>
@@ -741,12 +880,30 @@ QToolBox::Tab{
                            </color>
                           </brush>
                          </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>9</red>
+                            <green>5</green>
+                            <blue>13</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
                          <colorrole role="Text">
                           <brush brushstyle="SolidPattern">
                            <color alpha="255">
-                            <red>120</red>
-                            <green>120</green>
-                            <blue>120</blue>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
                            </color>
                           </brush>
                          </colorrole>
@@ -768,8 +925,20 @@ QToolBox::Tab{
                            </color>
                           </brush>
                          </colorrole>
+                         <colorrole role="PlaceholderText">
+                          <brush brushstyle="NoBrush">
+                           <color alpha="128">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
                         </disabled>
                        </palette>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
                       </property>
                       <property name="text">
                        <string>ITEM 2</string>
@@ -788,6 +957,9 @@ QToolBox::Tab{
                     </item>
                     <item>
                      <widget class="QPushButton" name="pushButton_12">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
+                      </property>
                       <property name="text">
                        <string>ITEM 3</string>
                       </property>
@@ -814,7 +986,7 @@ QToolBox::Tab{
                   <x>0</x>
                   <y>0</y>
                   <width>200</width>
-                  <height>629</height>
+                  <height>671</height>
                  </rect>
                 </property>
                 <attribute name="icon">
@@ -866,6 +1038,9 @@ QToolBox::Tab{
                     </property>
                     <item>
                      <widget class="QPushButton" name="pushButton_13">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
+                      </property>
                       <property name="text">
                        <string>SUB MENU</string>
                       </property>
@@ -883,6 +1058,9 @@ QToolBox::Tab{
                     </item>
                     <item>
                      <widget class="QPushButton" name="pushButton_14">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
+                      </property>
                       <property name="text">
                        <string>SUB MENU</string>
                       </property>
@@ -1061,7 +1239,8 @@ QToolBox::Tab{
              <item>
               <widget class="QLineEdit" name="lineEdit">
                <property name="styleSheet">
-                <string notr="true">border-bottom:3px solid rgb(230, 5, 64)</string>
+                <string notr="true">border-bottom:3px solid rgb(230, 5, 64);
+color: rgb(255, 255, 255);</string>
                </property>
                <property name="placeholderText">
                 <string>Search ...</string>
@@ -1278,6 +1457,9 @@ border-radius: 30px;</string>
              </property>
              <item alignment="Qt::AlignBottom">
               <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
                <property name="text">
                 <string>ModernUI v. 1.2.3.4</string>
                </property>
